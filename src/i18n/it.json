@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "title": "Neo Galaxy — Un viaggio tra i mondi del tuo ecosistema",
+    "description": "Neo Galaxy è una costellazione di progetti: roleplay, Minecraft, social, eventi e molto altro. Scopri l'ecosistema e unisciti alla community.",
+    "ogTitle": "Neo Galaxy — Un viaggio tra i mondi del tuo ecosistema",
+    "ogDescription": "Ogni progetto è un pianeta. Ogni pianeta, una risposta a un bisogno preciso. Esplora l'ecosistema Neo Galaxy."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Progetti",
+    "join": "Unisciti"
+  },
+  "trajectory": {
+    "start": "START",
+    "roleplay": "01 ROLEPLAY",
+    "aetheria": "02 AETHERIA",
+    "social": "03 SOCIAL",
+    "eterial": "04 ETERIAL",
+    "event": "05 EVENT",
+    "map": "MAPPA"
+  },
+  "hero": {
+    "title": "Un viaggio tra i mondi\ndel tuo ecosistema.",
+    "subtitle": "Ogni progetto è un pianeta. Ogni pianeta, una risposta a un bisogno preciso. Scorri per iniziare l'esplorazione e scoprire dove vuoi atterrare.",
+    "scrollCue": "Inizia il viaggio"
+  },
+  "intro": {
+    "title": "Neo Galaxy non è un singolo progetto: è una <em>costellazione</em>. Ogni componente dell'ecosistema nasce per rispondere a un bisogno reale, e insieme tracciano un'unica rotta — dall'idea alla community, dai dati alla visione d'insieme."
+  },
+  "planets": {
+    "p1": {
+      "title": "Neo Galaxy Roleplay",
+      "description": "Un regno fantasy chiamato Vaeloria, diviso tra popoli, alleanze e territori in conflitto. Crea il tuo personaggio ed entra a far parte di una storia collettiva che la community scrive insieme, regione dopo regione.",
+      "detailToggle": "Scopri di più",
+      "detail": "Vaeloria è divisa in quattordici regioni, ciascuna con una propria identità politica e culturale: regni in equilibrio precario, popoli in cerca di alleanze, territori contesi. Alla creazione scegli razza, background e schieramento, poi la tua storia si intreccia con eventi guidati dallo staff e con le scelte degli altri giocatori: le azioni in una regione possono cambiare gli equilibri delle altre."
+    },
+    "p2": {
+      "title": "Aetheria MC",
+      "description": "Un server Minecraft a tema fantasy costruito per esplorazione, progressione e sopravvivenza in compagnia. Dungeon da affrontare, magia da scoprire e una community sempre pronta a giocare insieme.",
+      "detailToggle": "Scopri di più",
+      "detail": "Il mondo è pensato per la progressione a lungo termine: classi e abilità da sbloccare, dungeon con meccaniche originali e boss studiati per essere affrontati in gruppo. La sopravvivenza è collaborativa più che competitiva, con eventi periodici organizzati dallo staff e territori da costruire insieme al resto della community."
+    },
+    "p3": {
+      "title": "Neo Galaxy Social",
+      "description": "I momenti della community raccontati attraverso video, post ed eventi sui canali social. Uno spazio aperto a chi vuole sperimentare come creator, montatore o grafico.",
+      "detailToggle": "Scopri di più",
+      "detail": "Il team copre l'intero processo: dalla ripresa e dal montaggio dei momenti migliori della community, alla grafica per i post, fino alla programmazione dei contenuti sui canali social. È il progetto più aperto a chi vuole imparare facendo, anche senza esperienza pregressa, lavorando fianco a fianco con chi già monta, disegna o scrive."
+    },
+    "p4": {
+      "title": "Eterial NC",
+      "description": "Uno dei progetti in crescita dell'ecosistema, ancora in fase di costruzione. Uno spazio aperto a chi vuole entrare fin dall'inizio e contribuire a definirne forma e direzione.",
+      "detailToggle": "Scopri di più",
+      "detail": "È il progetto più giovane dell'ecosistema, ancora senza una forma definitiva. Le prime decisioni — ambientazione, meccaniche, direzione artistica — si prendono insieme a chi entra ora nel team, con la possibilità reale di lasciare un'impronta fin dalle fondamenta."
+    },
+    "p5": {
+      "title": "Event Room",
+      "description": "Serate a tema, visioni condivise e chiacchierate in voce per ritrovarsi lontano dai propri progetti abituali. Film, serie, quiz e sondaggi scandiscono gli appuntamenti della community.",
+      "detailToggle": "Scopri di più",
+      "detail": "Il calendario alterna serate a tema fisso — visioni di film e serie, maratone anime — a momenti più liberi come sondaggi, quiz e semplici serate in voce. È pensata come punto di incontro trasversale, aperto anche a chi non è coinvolto negli altri progetti dell'ecosistema."
+    }
+  },
+  "map": {
+    "title": "Mappa della galassia",
+    "subtitle": "Tutti i progetti dell'ecosistema, in un unico colpo d'occhio. Seleziona una destinazione per tornare a esplorarla.",
+    "nodes": {
+      "n1": "01 · Roleplay",
+      "n2": "02 · Aetheria MC",
+      "n3": "03 · Neo Galaxy Social",
+      "n4": "04 · Eterial NC",
+      "n5": "05 · Event Room"
+    }
+  },
+  "cta": {
+    "title": "Pronto ad allacciare le cinture?",
+    "descriptionLine1": "Neo Galaxy è una community viva, in continua espansione.",
+    "descriptionLine2": "Presentati, scegli come partecipare e inizia la tua rotta con noi.",
+    "button": "Entra nel Discord"
+  },
+  "footer": {
+    "sections": "Sezioni",
+    "social": "Social",
+    "copyright": "© {year} NEO GALAXY — TUTTI I DIRITTI RISERVATI"
+  }
+}

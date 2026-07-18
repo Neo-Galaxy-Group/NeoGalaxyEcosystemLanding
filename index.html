@@ -1,14 +1,51 @@
-<!doctype html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Portale web di Neo Galaxy" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon/favicon.ico" blocking="render">
-    <title>Neo Galaxy</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx" blocking="render"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Galaxy — A journey through the worlds of your ecosystem</title>
+  <meta name="description" content="Neo Galaxy is a constellation of projects: roleplay, Minecraft, social, events and much more. Discover the ecosystem and join the community." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://neogalaxy.it/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Neo Galaxy — A journey through the worlds of your ecosystem" />
+  <meta property="og:description" content="Every project is a planet. Every planet, an answer to a precise need. Explore the Neo Galaxy ecosystem." />
+  <meta property="og:image" content="/neogalaxy-logo.png" />
+  <meta property="og:url" content="https://neogalaxy.it/" />
+  <meta property="og:site_name" content="Neo Galaxy" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Neo Galaxy — A journey through the worlds of your ecosystem" />
+  <meta name="twitter:description" content="Every project is a planet. Every planet, an answer to a precise need. Explore the Neo Galaxy ecosystem." />
+  <meta name="twitter:image" content="/neogalaxy-logo.png" />
+
+  <!-- Theme / Favicon -->
+  <meta name="theme-color" content="#05040f" />
+  <link rel="icon" type="image/png" href="/neogalaxy-logo-small.png" />
+
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Neo Galaxy",
+    "url": "https://neogalaxy.it/",
+    "logo": "https://neogalaxy.it/neogalaxy-logo.png",
+    "description": "Neo Galaxy is a constellation of projects: roleplay, Minecraft, social, events and much more.",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>

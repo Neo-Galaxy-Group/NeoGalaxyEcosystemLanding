@@ -1,0 +1,290 @@
+// ---------- Nebula drift animations ----------
+@keyframes drift1 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(6%, 8%) scale(1.12); }
+}
+
+@keyframes drift2 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(-8%, -6%) scale(1.08); }
+}
+
+@keyframes drift3 {
+  from { transform: translate(0, 0) scale(1); }
+  to { transform: translate(4%, -10%) scale(1.15); }
+}
+
+// ---------- Hero logo float ----------
+@keyframes heroLogoFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+// ---------- Scroll cue bob ----------
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+// ---------- Reduced motion ----------
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// ---------- Nebula blobs ----------
+.nebula-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+
+  &.b1 {
+    width: 55vw;
+    height: 55vw;
+    top: 5%;
+    left: -15%;
+    background: radial-gradient(circle, var(--nebula-purple), transparent 70%);
+    animation: drift1 60s ease-in-out infinite alternate;
+  }
+
+  &.b2 {
+    width: 45vw;
+    height: 45vw;
+    top: 40%;
+    right: -10%;
+    background: radial-gradient(circle, var(--nebula-magenta), transparent 70%);
+    animation: drift2 75s ease-in-out infinite alternate;
+  }
+
+  &.b3 {
+    width: 40vw;
+    height: 40vw;
+    bottom: 5%;
+    left: 10%;
+    background: radial-gradient(circle, var(--star-cyan), transparent 72%);
+    opacity: 0.28;
+    animation: drift3 90s ease-in-out infinite alternate;
+  }
+}
+
+// ---------- Hero logo animation ----------
+.hero-logo-img {
+  animation: heroLogoFloat 7s ease-in-out infinite;
+  filter: drop-shadow(0 0 40px rgba(254, 39, 251, 0.25));
+}
+
+// ---------- Scroll cue arrow animation ----------
+.scroll-cue .arrow {
+  animation: bob 1.8s ease-in-out infinite;
+}
+
+// ---------- Planet section reveal ----------
+.planet-section .content {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 1s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 1s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.planet-section.in-view .content {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+// ---------- Detail modal animation ----------
+.detail-modal {
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+// ---------- Trajectory node transitions ----------
+.t-node {
+  transition: opacity 0.5s ease;
+
+  .dot {
+    transition: all 0.5s ease;
+  }
+
+  .label {
+    transition: color 0.5s ease;
+  }
+
+  &.active {
+    opacity: 1;
+
+    .dot {
+      background: var(--node-color, var(--star-cyan));
+      box-shadow: 0 0 10px 2px var(--node-color, var(--star-cyan));
+      transform: scale(1.6);
+    }
+
+    .label {
+      color: var(--text);
+    }
+  }
+}
+
+// ---------- Progress bar transition ----------
+.progress-bar {
+  transition: width 0.1s linear;
+}
+
+// ---------- Header link underline ----------
+.site-header nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 1px;
+  background: var(--star-cyan);
+  transition: width 0.3s ease;
+}
+
+.site-header nav a:hover::after {
+  width: 100%;
+}
+
+// ---------- CTA button hover ----------
+.cta-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 55px -8px var(--star-cyan);
+  }
+}
+
+// ---------- Scroll cue hover ----------
+.scroll-cue {
+  transition: border-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    border-color: var(--star-cyan);
+    color: var(--text);
+  }
+}
+
+// ---------- Constellation node hover ----------
+.c-node .c-dot {
+  transition: transform 0.3s ease;
+}
+
+.c-node:hover .c-dot {
+  transform: scale(1.25);
+}
+
+.c-node:hover .c-label {
+  color: var(--text);
+}
+
+// ---------- Detail toggle hover ----------
+.detail-toggle {
+  transition: background 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: color-mix(in srgb, var(--pc) 16%, transparent);
+  }
+}
+
+// ---------- Footer link hover ----------
+.footer-col a {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--nebula-magenta);
+  }
+}
+
+// ---------- Planet visual ring (pseudo-element via SCSS) ----------
+.planet-visual {
+  &::after {
+    content: '';
+    position: absolute;
+    inset: -18px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--pc) 40%, transparent);
+    opacity: 0.6;
+  }
+}
+
+// ---------- Constellation SVG lines ----------
+.constellation svg line {
+  stroke: var(--muted-2);
+  stroke-width: 1;
+  stroke-dasharray: 3 5;
+}
+
+
+// ---------- Footer top gradient line ----------
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--star-cyan), var(--nebula-magenta), var(--nebula-purple), transparent);
+  box-shadow: 0 0 20px 1px rgba(254, 39, 251, 0.35);
+}
+
+// ---------- Intro em style ----------
+.intro h2 em {
+  font-style: normal;
+  color: var(--star-cyan);
+}
+
+// ---------- Custom scrollbar ----------
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-2);
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--nebula-purple);
+  }
+}
+
+// Firefox scrollbar
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--muted-2) var(--void);
+}
+
+// ---------- Trajectory stops before footer ----------
+.trajectory {
+  z-index: 20;
+}
+
+// ---------- Section fade-in/fade-out on scroll ----------
+.section-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
