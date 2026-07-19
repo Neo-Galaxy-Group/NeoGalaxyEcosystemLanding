@@ -6,42 +6,43 @@
     "ogDescription": "Every project is a planet. Every planet, an answer to a precise need. Explore the Neo Galaxy ecosystem."
   },
   "nav": {
-    "home": "Home",
+    "home": "Start",
     "projects": "Projects",
     "join": "Join"
   },
   "trajectory": {
     "start": "START",
-    "roleplay": "01 ROLEPLAY",
-    "aetheria": "02 AETHERIA",
-    "social": "03 SOCIAL",
-    "eterial": "04 ETERIAL",
-    "event": "05 EVENT",
+    "intro": "INTRO",
+    "community": "01 - COMMUNITY",
+    "ngsh": "02 - NGSH",
+    "academy": "03 - ACADEMY",
     "map": "MAP"
   },
-  "hero": {
+  "start": {
     "title": "A journey through the worlds\nof your ecosystem.",
     "subtitle": "Every project is a planet. Every planet, an answer to a precise need. Scroll to begin the exploration and discover where you want to land.",
     "scrollCue": "Start the journey"
   },
   "intro": {
-    "title": "Neo Galaxy is not a single project: it is a <em>constellation</em>. Every component of the ecosystem is born to answer a real need, and together they trace a single route — from idea to community, from data to the big picture."
+    "title": "Neo Galaxy is not a single project: it is a <em>constellation</em>. Every component of the ecosystem is born to answer a real need, and together they trace a single route — from idea to community, from data to the big picture.",
+    "scrollCue": "Continue the journey"
   },
   "planets": {
-    "p1": {
-      "title": "Neo Galaxy Roleplay",
+    "scrollCue": "Continue the journey",
+    "community": {
+      "title": "Neo Galaxy Community",
       "description": "A fantasy realm called Vaeloria, divided among peoples, alliances and territories in conflict. Create your character and become part of a collective story that the community writes together, region by region.",
       "detailToggle": "Learn more",
       "detail": "Vaeloria is divided into fourteen regions, each with its own political and cultural identity: kingdoms in precarious balance, peoples seeking alliances, contested territories. At creation you choose race, background and alignment, then your story intertwines with staff-guided events and other players' choices: actions in one region can shift the balance of the others."
     },
-    "p2": {
-      "title": "Aetheria MC",
+    "ngsh": {
+      "title": "Neo Galaxy Software House",
       "description": "A fantasy-themed Minecraft server built for exploration, progression and cooperative survival. Dungeons to face, magic to discover and a community always ready to play together.",
       "detailToggle": "Learn more",
       "detail": "The world is designed for long-term progression: classes and abilities to unlock, dungeons with original mechanics and bosses designed to be faced as a group. Survival is collaborative rather than competitive, with periodic staff-organized events and territories to build together with the rest of the community."
     },
-    "p3": {
-      "title": "Neo Galaxy Social",
+    "academy": {
+      "title": "Neo Galaxy Academy",
       "description": "The community's moments told through videos, posts and events on social channels. A space open to those who want to experiment as creators, editors or graphic designers.",
       "detailToggle": "Learn more",
       "detail": "The team covers the entire process: from shooting and editing the community's best moments, to graphics for posts, to scheduling content on social channels. It's the most open project for those who want to learn by doing, even without prior experience, working side by side with those who already edit, design or write."
@@ -77,8 +78,6 @@
     "button": "Join the Discord"
   },
   "footer": {
-    "sections": "Sections",
-    "social": "Social",
     "copyright": "© {year} NEO GALAXY — ALL RIGHTS RESERVED"
   }
 }

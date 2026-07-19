@@ -2,28 +2,28 @@ import { Helmet } from 'react-helmet-async';
 import { useI18n } from './i18n/useI18n';
 import './styles/animations.scss';
 
-import Starfield from './components/Starfield';
-import ProgressBar from './components/ProgressBar';
 import Header from './components/Header';
-import Trajectory from './components/Trajectory';
-import Hero from './components/Hero';
+
+import Starfield from './components/Starfield';
+import Start from './components/Start';
 import Intro from './components/Intro';
+import ProgressBar from './components/ProgressBar';
+import Trajectory from './components/Trajectory';
 import PlanetSection from './components/PlanetSection';
 import GalaxyMap from './components/GalaxyMap';
-import Cta from './components/Cta';
 import Footer from './components/Footer';
 
 interface Planet {
   id: string;
   planetKey: string;
+  planetColor: string;
+  nextSectionId: string;
 }
 
 const planets: Planet[] = [
-  { id: 'p1', planetKey: 'p1' },
-  { id: 'p2', planetKey: 'p2' },
-  { id: 'p3', planetKey: 'p3' },
-  { id: 'p4', planetKey: 'p4' },
-  { id: 'p5', planetKey: 'p5' },
+  { id: 'community', planetKey: 'community', planetColor: 'p1', nextSectionId: 'ngsh' },
+  { id: 'ngsh', planetKey: 'ngsh', planetColor: 'p2', nextSectionId: 'academy' },
+  { id: 'academy', planetKey: 'academy', planetColor: 'p3', nextSectionId: 'map' }
 ];
 
 export default function App() {
@@ -70,13 +70,12 @@ export default function App() {
       <Trajectory t={t} />
 
       <main className="relative z-[2]">
-        <Hero t={t} />
+        <Start t={t} />
         <Intro t={t} />
         {planets.map((planet) => (
-          <PlanetSection key={planet.id} id={planet.id} planetKey={planet.planetKey} t={t} />
+          <PlanetSection key={planet.id} id={planet.id} planetKey={planet.planetKey} planetColor={planet.planetColor} nextSectionId={planet.nextSectionId} t={t} />
         ))}
         <GalaxyMap t={t} />
-        <Cta t={t} />
       </main>
 
       <Footer t={t} />

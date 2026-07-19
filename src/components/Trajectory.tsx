@@ -11,13 +11,12 @@ interface TrajectoryProps {
 }
 
 const nodes: TrajectoryNode[] = [
-  { target: 'hero', key: 'start', color: null },
-  { target: 'p1', key: 'roleplay', color: 'var(--p1)' },
-  { target: 'p2', key: 'aetheria', color: 'var(--p2)' },
-  { target: 'p3', key: 'social', color: 'var(--p3)' },
-  { target: 'p4', key: 'eterial', color: 'var(--p4)' },
-  { target: 'p5', key: 'event', color: 'var(--p5)' },
-  { target: 'map', key: 'map', color: null },
+  { target: 'start', key: 'start', color: null },
+  { target: 'intro', key: 'intro', color: 'var(--p1)' },
+  { target: 'community', key: 'community', color: 'var(--p2)' },
+  { target: 'ngsh', key: 'ngsh', color: 'var(--p3)' },
+  { target: 'academy', key: 'academy', color: 'var(--p4)' },
+  { target: 'map', key: 'map', color: 'var(--p5)' },
 ];
 
 export default function Trajectory({ t }: TrajectoryProps) {
@@ -25,7 +24,6 @@ export default function Trajectory({ t }: TrajectoryProps) {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const sectionIds = ['hero', 'p1', 'p2', 'p3', 'p4', 'p5', 'map'];
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -39,7 +37,7 @@ export default function Trajectory({ t }: TrajectoryProps) {
       },
       { threshold: 0.45 }
     );
-    sectionIds.forEach((id) => { const el = document.getElementById(id); if (el) observer.observe(el); });
+    nodes.forEach((node) => { const el = document.getElementById(node.target); if (el) observer.observe(el); });
 
     // Hide trajectory when footer is visible
     const footer = document.querySelector('footer');
