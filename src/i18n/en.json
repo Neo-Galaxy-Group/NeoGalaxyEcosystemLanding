@@ -31,19 +31,19 @@
     "scrollCue": "Continue the journey",
     "community": {
       "title": "Neo Galaxy Community",
-      "description": "A fantasy realm called Vaeloria, divided among peoples, alliances and territories in conflict. Create your character and become part of a collective story that the community writes together, region by region.",
+      "description": "The ultimate gathering place where passions come alive. From gaming to anime, music to TV series, we bring people together through shared interests. A vibrant experience, powered by ongoing events and special projects like our dedicated Minecraft servers and Roleplay sessions. Step in, connect, and cultivate your hobbies with us.",
       "moreInfo": "Learn more",
       "url": "https://community.neogalaxy.it"
     },
     "ngsh": {
       "title": "Neo Galaxy Software House",
-      "description": "A fantasy-themed Minecraft server built for exploration, progression and cooperative survival. Dungeons to face, magic to discover and a community always ready to play together.",
+      "description": "The technological and productive core of Neo Galaxy, where ideas become code. We operate on two fronts: the distribution and release of proprietary software and services, and tailor-made freelance development for external clients. Professionalism and technical execution at the service of your digital needs.",
       "moreInfo": "Learn more",
       "url": "https://ngsh.neogalaxy.it"
     },
     "academy": {
       "title": "Neo Galaxy Academy",
-      "description": "The community's moments told through videos, posts and events on social channels. A space open to those who want to experiment as creators, editors or graphic designers.",
+      "description": "The space where theory becomes skill and mutual support creates value. Our Academy welcomes students into a collaborative Discord environment, perfect for studying in synergy and overcoming academic challenges together. In parallel, it operates in the professional education sector, providing private tutoring and advanced IT training courses to prepare you for tomorrow's technological challenges.",
       "moreInfo": "Learn more",
       "url": "https://academy.neogalaxy.it"
     }
