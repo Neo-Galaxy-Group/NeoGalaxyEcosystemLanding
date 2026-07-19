@@ -1,6 +1,10 @@
 import useSectionFade from '../hooks/useSectionFade';
 
-export default function Hero({ t }) {
+interface HeroProps {
+  t: (key: string) => string;
+}
+
+export default function Hero({ t }: HeroProps) {
   const titleParts = t('hero.title').split('\n');
   const fadeRef = useSectionFade(0.2);
 

@@ -1,7 +1,15 @@
 import { useEffect, useRef } from 'react';
 
-export default function DetailModal({ open, onClose, title, children, planetColor }) {
-  const dialogRef = useRef(null);
+interface DetailModalProps {
+  open: boolean;
+  onClose: () => void;
+  title: string;
+  children: React.ReactNode;
+  planetColor: string;
+}
+
+export default function DetailModal({ open, onClose, title, children, planetColor }: DetailModalProps) {
+  const dialogRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (open) {
@@ -15,7 +23,7 @@ export default function DetailModal({ open, onClose, title, children, planetColo
   }, [open]);
 
   useEffect(() => {
-    function handleKeyDown(e) {
+    function handleKeyDown(e: KeyboardEvent) {
       if (e.key === 'Escape' && open) onClose();
     }
     window.addEventListener('keydown', handleKeyDown);
@@ -45,7 +53,7 @@ export default function DetailModal({ open, onClose, title, children, planetColo
         }}
         onClick={(e) => e.stopPropagation()}
         role="dialog"
-        aria-modal="true"
+        aria-modal={true}
         aria-label={title}
       >
         {/* Close button */}

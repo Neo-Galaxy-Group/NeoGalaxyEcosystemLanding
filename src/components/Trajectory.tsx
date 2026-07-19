@@ -1,6 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 
-const nodes = [
+interface TrajectoryNode {
+  target: string;
+  key: string;
+  color: string | null;
+}
+
+interface TrajectoryProps {
+  t: (key: string) => string;
+}
+
+const nodes: TrajectoryNode[] = [
   { target: 'hero', key: 'start', color: null },
   { target: 'p1', key: 'roleplay', color: 'var(--p1)' },
   { target: 'p2', key: 'aetheria', color: 'var(--p2)' },
@@ -10,8 +20,8 @@ const nodes = [
   { target: 'map', key: 'map', color: null },
 ];
 
-export default function Trajectory({ t }) {
-  const nodesRef = useRef([]);
+export default function Trajectory({ t }: TrajectoryProps) {
+  const nodesRef = useRef<(HTMLDivElement | null)[]>([]);
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
@@ -23,7 +33,7 @@ export default function Trajectory({ t }) {
             const id = entry.target.id;
             nodesRef.current.forEach((n) => { if (n) n.classList.remove('active'); });
             const idx = nodes.findIndex((n) => n.target === id);
-            if (idx >= 0 && nodesRef.current[idx]) nodesRef.current[idx].classList.add('active');
+            if (idx >= 0 && nodesRef.current[idx]) nodesRef.current[idx]!.classList.add('active');
           }
         });
       },
@@ -33,7 +43,7 @@ export default function Trajectory({ t }) {
 
     // Hide trajectory when footer is visible
     const footer = document.querySelector('footer');
-    let footerObserver;
+    let footerObserver: IntersectionObserver | undefined;
     if (footer) {
       footerObserver = new IntersectionObserver(
         (entries) => {
@@ -52,7 +62,7 @@ export default function Trajectory({ t }) {
     };
   }, []);
 
-  function handleClick(target) {
+  function handleClick(target: string) {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const el = document.getElementById(target);
     if (el) el.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
@@ -69,9 +79,9 @@ export default function Trajectory({ t }) {
         {nodes.map((node, i) => (
           <div
             key={node.target}
-            ref={(el) => (nodesRef.current[i] = el)}
+            ref={(el) => { nodesRef.current[i] = el; }}
             className="t-node flex items-center gap-[10px] opacity-45 cursor-pointer"
-            style={{ '--node-color': node.color || 'var(--star-cyan)', pointerEvents: 'auto' }}
+            style={{ '--node-color': node.color || 'var(--star-cyan)', pointerEvents: 'auto' } as React.CSSProperties}
             data-target={node.target}
             onClick={() => handleClick(node.target)}
           >

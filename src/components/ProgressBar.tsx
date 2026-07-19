@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 export default function ProgressBar() {
-  const barRef = useRef(null);
+  const barRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     function updateProgress() {

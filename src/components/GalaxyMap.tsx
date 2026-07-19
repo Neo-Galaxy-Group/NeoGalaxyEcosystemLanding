@@ -1,6 +1,18 @@
 import useSectionFade from '../hooks/useSectionFade';
 
-const mapNodes = [
+interface GalaxyMapProps {
+  t: (key: string) => string;
+}
+
+interface MapNode {
+  id: string;
+  href: string;
+  cssVar: string;
+  pos: string;
+  key: string;
+}
+
+const mapNodes: MapNode[] = [
   { id: 'n1', href: '#p1', cssVar: 'var(--p1)', pos: 'top-[12%] left-[8%]', key: 'n1' },
   { id: 'n2', href: '#p2', cssVar: 'var(--p2)', pos: 'top-[6%] left-[45%]', key: 'n2' },
   { id: 'n3', href: '#p3', cssVar: 'var(--p3)', pos: 'top-[40%] left-[78%]', key: 'n3' },
@@ -8,7 +20,7 @@ const mapNodes = [
   { id: 'n5', href: '#p5', cssVar: 'var(--p5)', pos: 'top-[70%] left-[14%]', key: 'n5' },
 ];
 
-export default function GalaxyMap({ t }) {
+export default function GalaxyMap({ t }: GalaxyMapProps) {
   const fadeRef = useSectionFade(0.15);
 
   return (
@@ -39,7 +51,7 @@ export default function GalaxyMap({ t }) {
               key={node.id}
               href={node.href}
               className={`c-node absolute -translate-x-1/2 -translate-y-1/2 no-underline flex flex-col items-center gap-[10px] w-[140px] ${node.pos}`}
-              style={{ '--pc': node.cssVar }}
+              style={{ '--pc': node.cssVar } as React.CSSProperties}
             >
               <span className="c-dot w-4 h-4 rounded-full" style={{ background: node.cssVar, boxShadow: `0 0 22px 2px ${node.cssVar}` }} />
               <span className="c-label font-[var(--font-mono)] text-[11px] tracking-[0.05em] text-[var(--muted)] text-center">

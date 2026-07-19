@@ -1,4 +1,8 @@
-export default function Footer({ t }) {
+interface FooterProps {
+  t: (key: string) => string;
+}
+
+export default function Footer({ t }: FooterProps) {
   return (
     <footer className="relative z-[2] font-[var(--font-mono)] text-[12px] tracking-[0.04em] text-[var(--muted-2)]" style={{ background: 'linear-gradient(to bottom, rgba(23,15,56,0.55), rgba(10,7,32,0.85) 40%, var(--void-2))', padding: '72px 32px 40px' }}>
       <div className="footer-grid" style={{ maxWidth: '1000px', margin: '0 auto 48px auto', display: 'flex', flexWrap: 'wrap', gap: '48px', justifyContent: 'space-between' }}>
@@ -17,7 +21,7 @@ export default function Footer({ t }) {
         </div>
       </div>
       <div style={{ textAlign: 'center', paddingTop: '28px', borderTop: '1px solid var(--void-3)', maxWidth: '1000px', margin: '0 auto', fontSize: '10.5px', letterSpacing: '0.06em', lineHeight: '1.5' }}>
-        {t('footer.copyright').replace('{year}', new Date().getFullYear())}
+        {t('footer.copyright').replace('{year}', String(new Date().getFullYear()))}
       </div>
     </footer>
   );

@@ -1,6 +1,10 @@
 import useSectionFade from '../hooks/useSectionFade';
 
-export default function Cta({ t }) {
+interface CtaProps {
+  t: (key: string) => string;
+}
+
+export default function Cta({ t }: CtaProps) {
   const fadeRef = useSectionFade(0.25);
 
   return (

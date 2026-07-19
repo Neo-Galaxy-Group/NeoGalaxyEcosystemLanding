@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 export default function useSectionFade(threshold = 0.25) {
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const el = ref.current;

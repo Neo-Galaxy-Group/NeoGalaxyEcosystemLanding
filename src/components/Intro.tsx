@@ -1,6 +1,10 @@
 import useSectionFade from '../hooks/useSectionFade';
 
-export default function Intro({ t }) {
+interface IntroProps {
+  t: (key: string) => string;
+}
+
+export default function Intro({ t }: IntroProps) {
   const fadeRef = useSectionFade(0.25);
 
   return (

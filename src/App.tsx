@@ -13,7 +13,12 @@ import GalaxyMap from './components/GalaxyMap';
 import Cta from './components/Cta';
 import Footer from './components/Footer';
 
-const planets = [
+interface Planet {
+  id: string;
+  planetKey: string;
+}
+
+const planets: Planet[] = [
   { id: 'p1', planetKey: 'p1' },
   { id: 'p2', planetKey: 'p2' },
   { id: 'p3', planetKey: 'p3' },

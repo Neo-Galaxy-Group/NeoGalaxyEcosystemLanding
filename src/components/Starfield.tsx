@@ -1,20 +1,33 @@
 import { useEffect, useRef } from 'react';
 
+interface Star {
+  x: number;
+  y: number;
+  r: number;
+  baseAlpha: number;
+  phase: number;
+  speed: number;
+  parallax: number;
+}
+
 export default function Starfield() {
-  const canvasRef = useRef(null);
-  const starsRef = useRef([]);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const starsRef = useRef<Star[]>([]);
   const scrollYRef = useRef(0);
   const tRef = useRef(0);
   const reduceMotionRef = useRef(false);
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    if (!canvas) return;
     const ctx = canvas.getContext('2d');
+    if (!ctx) return;
     reduceMotionRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function generateStars() {
+      if (!canvas) return;
       const count = Math.floor((canvas.width * canvas.height) / 6000);
-      const stars = [];
+      const stars: Star[] = [];
       for (let i = 0; i < count; i++) {
         stars.push({
           x: Math.random() * canvas.width,
@@ -30,13 +43,15 @@ export default function Starfield() {
     }
 
     function resizeCanvas() {
+      if (!canvas) return;
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       generateStars();
     }
 
-    let animId;
+    let animId: number;
     function drawStars() {
+      if (!canvas || !ctx) return;
       const stars = starsRef.current;
       const t = tRef.current;
       const scrollY = scrollYRef.current;

@@ -1,4 +1,8 @@
-export default function Header({ t }) {
+interface HeaderProps {
+  t: (key: string) => string;
+}
+
+export default function Header({ t }: HeaderProps) {
   return (
     <header className="site-header fixed top-0 left-0 right-0 z-50 flex items-center justify-center backdrop-blur-[6px]" style={{ background: 'linear-gradient(to bottom, rgba(5,4,15,0.7), transparent)', padding: '22px 32px' }}>
       <nav className="flex" style={{ gap: '36px' }}>
