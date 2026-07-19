@@ -51,18 +51,10 @@
     "title": "Mappa della galassia",
     "subtitle": "Tutti i progetti dell'ecosistema, in un unico colpo d'occhio. Seleziona una destinazione per tornare a esplorarla.",
     "nodes": {
-      "n1": "01 · Roleplay",
-      "n2": "02 · Aetheria MC",
-      "n3": "03 · Neo Galaxy Social",
-      "n4": "04 · Eterial NC",
-      "n5": "05 · Event Room"
+      "n1": "01 · Neo Galaxy Community",
+      "n2": "02 · Neo Galaxy Software House",
+      "n3": "03 · Neo Galaxy Academy"
     }
-  },
-  "cta": {
-    "title": "Pronto ad allacciare le cinture?",
-    "descriptionLine1": "Neo Galaxy è una community viva, in continua espansione.",
-    "descriptionLine2": "Presentati, scegli come partecipare e inizia la tua rotta con noi.",
-    "button": "Entra nel Discord"
   },
   "footer": {
     "copyright": "© {year} NEO GALAXY — TUTTI I DIRITTI RISERVATI"
