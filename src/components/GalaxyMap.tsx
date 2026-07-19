@@ -13,9 +13,9 @@ interface MapNode {
 }
 
 const mapNodes: MapNode[] = [
-  { id: 'n1', href: '#p1', cssVar: 'var(--p1)', pos: 'top-[12%] left-[15%]', key: 'n1' },
-  { id: 'n2', href: '#p2', cssVar: 'var(--p2)', pos: 'top-[10%] left-[70%]', key: 'n2' },
-  { id: 'n3', href: '#p3', cssVar: 'var(--p3)', pos: 'top-[78%] left-[42%]', key: 'n3' },
+  { id: 'n1', href: '#community', cssVar: 'var(--p1)', pos: 'top-[12%] left-[15%]', key: 'n1' },
+  { id: 'n2', href: '#ngsh', cssVar: 'var(--p2)', pos: 'top-[10%] left-[70%]', key: 'n2' },
+  { id: 'n3', href: '#academy', cssVar: 'var(--p3)', pos: 'top-[78%] left-[42%]', key: 'n3' },
 ];
 
 export default function GalaxyMap({ t }: GalaxyMapProps) {

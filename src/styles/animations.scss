@@ -158,16 +158,6 @@
   width: 100%;
 }
 
-// ---------- CTA button hover ----------
-.cta-button {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 55px -8px var(--star-cyan);
-  }
-}
-
 // ---------- Scroll cue hover ----------
 .scroll-cue {
   transition: border-color 0.3s ease, color 0.3s ease;

@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-import DetailModal from "./DetailModal";
+import { useEffect, useRef } from "react";
 import useSectionFade from "../hooks/useSectionFade";
 
 interface PlanetSectionProps {
@@ -16,9 +15,13 @@ const planetIconMap: Record<string, string> = {
   academy: "assets/img/academy.png",
 };
 
-export default function PlanetSection({id, planetKey, planetColor, nextSectionId, t,
+export default function PlanetSection({
+  id,
+  planetKey,
+  planetColor,
+  nextSectionId,
+  t,
 }: PlanetSectionProps) {
-  const [modalOpen, setModalOpen] = useState(false);
   const sectionRef = useRef<HTMLElement | null>(null);
   const fadeRef = useSectionFade(0.2);
 
@@ -86,11 +89,13 @@ export default function PlanetSection({id, planetKey, planetColor, nextSectionId
             lineHeight: "1.5",
             marginTop: "28px",
             marginRight: "1.2rem",
-          }}>
+          }}
+        >
           {t(`planets.scrollCue`)} <span className="chev">↓</span>
         </a>
-        <button
-          className="detail-toggle inline-flex items-center gap-2 bg-transparent cursor-pointer font-[var(--font-mono)] text-[12px] tracking-[0.08em] uppercase rounded-full text-[var(--pc)]"
+        <a
+          href={`${t(`planets.${id}.url`)}`}
+          className="detail-toggle inline-flex items-center gap-2 bg-transparent cursor-pointer font-[var(--font-mono)] text-[12px] tracking-[0.08em] uppercase rounded-full text-[var(--pc)] no-underline"
           style={{
             border: "1px solid color-mix(in srgb, var(--pc) 45%, transparent)",
             padding: "11px 20px",
@@ -98,20 +103,10 @@ export default function PlanetSection({id, planetKey, planetColor, nextSectionId
             marginTop: "28px",
             marginRight: "1.2rem",
           }}
-          onClick={() => setModalOpen(true)}
         >
-          {t(`planets.${id}.detailToggle`)} <span className="chev">→</span>
-        </button>
+          {t(`planets.${id}.moreInfo`)} <span className="chev">→</span>
+        </a>
       </div>
-
-      <DetailModal
-        open={modalOpen}
-        onClose={() => setModalOpen(false)}
-        title={t(`planets.${id}.title`)}
-        planetColor={`var(--${planetColor})` || "var(--star-cyan)"}
-      >
-        <p>{t(`planets.${id}.detail`)}</p>
-      </DetailModal>
     </section>
   );
 }

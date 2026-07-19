@@ -1,14 +1,13 @@
 {
   "meta": {
-    "title": "Neo Galaxy — A journey through the worlds of your ecosystem",
-    "description": "Neo Galaxy is a constellation of projects: roleplay, Minecraft, social, events and much more. Discover the ecosystem and join the community.",
+    "title": "Neo Galaxy — A journey through the worlds of our ecosystem.",
+    "description": "Neo Galaxy is a constellation of projects. Discover the ecosystem and join the community.",
     "ogTitle": "Neo Galaxy — A journey through the worlds of your ecosystem",
     "ogDescription": "Every project is a planet. Every planet, an answer to a precise need. Explore the Neo Galaxy ecosystem."
   },
   "nav": {
     "home": "Start",
-    "projects": "Projects",
-    "join": "Join"
+    "projects": "Projects"
   },
   "trajectory": {
     "start": "START",
@@ -19,12 +18,13 @@
     "map": "MAP"
   },
   "start": {
-    "title": "A journey through the worlds\nof your ecosystem.",
-    "subtitle": "Every project is a planet. Every planet, an answer to a precise need. Scroll to begin the exploration and discover where you want to land.",
+    "title": "A journey through the worlds of our ecosystem.",
+    "subtitle": "A course charted to meet your specific needs or spark your interests. Scroll to begin the exploration and choose where to land.",
     "scrollCue": "Start the journey"
   },
   "intro": {
-    "title": "Neo Galaxy is not a single project: it is a <em>constellation</em>. Every component of the ecosystem is born to answer a real need, and together they trace a single route — from idea to community, from data to the big picture.",
+    "title": "One ecosystem. Infinite touchpoints.",
+    "text": "Neo Galaxy is not confined to a single form, but lives in the synergy of its worlds. Every element of our ecosystem is a tangible answer to a real need: connected fragments that chart a single, grand course. From the spark of the Community to the architecture of the Software House, all the way to the guided growth of the Academy: from data to the bigger picture. Scroll to begin the journey and chart your orbit.",
     "scrollCue": "Continue the journey"
   },
   "planets": {
@@ -32,20 +32,20 @@
     "community": {
       "title": "Neo Galaxy Community",
       "description": "A fantasy realm called Vaeloria, divided among peoples, alliances and territories in conflict. Create your character and become part of a collective story that the community writes together, region by region.",
-      "detailToggle": "Learn more",
-      "detail": "Vaeloria is divided into fourteen regions, each with its own political and cultural identity: kingdoms in precarious balance, peoples seeking alliances, contested territories. At creation you choose race, background and alignment, then your story intertwines with staff-guided events and other players' choices: actions in one region can shift the balance of the others."
+      "moreInfo": "Learn more",
+      "url": "https://community.neogalaxy.it"
     },
     "ngsh": {
       "title": "Neo Galaxy Software House",
       "description": "A fantasy-themed Minecraft server built for exploration, progression and cooperative survival. Dungeons to face, magic to discover and a community always ready to play together.",
-      "detailToggle": "Learn more",
-      "detail": "The world is designed for long-term progression: classes and abilities to unlock, dungeons with original mechanics and bosses designed to be faced as a group. Survival is collaborative rather than competitive, with periodic staff-organized events and territories to build together with the rest of the community."
+      "moreInfo": "Learn more",
+      "url": "https://ngsh.neogalaxy.it"
     },
     "academy": {
       "title": "Neo Galaxy Academy",
       "description": "The community's moments told through videos, posts and events on social channels. A space open to those who want to experiment as creators, editors or graphic designers.",
-      "detailToggle": "Learn more",
-      "detail": "The team covers the entire process: from shooting and editing the community's best moments, to graphics for posts, to scheduling content on social channels. It's the most open project for those who want to learn by doing, even without prior experience, working side by side with those who already edit, design or write."
+      "moreInfo": "Learn more",
+      "url": "https://academy.neogalaxy.it"
     }
   },
   "map": {

@@ -18,6 +18,10 @@ export default function Intro({ t }: IntroProps) {
           className="font-[var(--font-display)] font-semibold text-[clamp(1.6rem,3.4vw,2.3rem)] leading-[1.35] text-[var(--text)]"
           dangerouslySetInnerHTML={{ __html: t('intro.title') }}
         />
+        <p
+          className="font-[var(--font-body)] text-[clamp(0.95rem,1.4vw,1.05rem)] leading-[1.7] text-[var(--muted)] mt-4"
+          dangerouslySetInnerHTML={{ __html: t('intro.text') }}
+        />
         <a href="#community" className="scroll-cue font-[var(--font-mono)] text-[12px] tracking-[0.1em] text-[var(--muted)] inline-flex items-center gap-[10px] no-underline border border-[var(--muted-2)] rounded-full " style={{ padding: '12px 20px', lineHeight: '1.5', marginTop: '2rem' }}>
           {t('intro.scrollCue')} <span className="arrow">↓</span>
         </a>

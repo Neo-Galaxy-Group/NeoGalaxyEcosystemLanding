@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Neo Galaxy — Un viaggio tra i mondi del tuo ecosistema",
-    "description": "Neo Galaxy è una costellazione di progetti: roleplay, Minecraft, social, eventi e molto altro. Scopri l'ecosistema e unisciti alla community.",
+    "title": "Neo Galaxy — Un viaggio tra i mondi del nostro ecosistema.",
+    "description": "Neo Galaxy è una costellazione di progetti. Scopri l'ecosistema e unisciti alla community.",
     "ogTitle": "Neo Galaxy — Un viaggio tra i mondi del tuo ecosistema",
     "ogDescription": "Ogni progetto è un pianeta. Ogni pianeta, una risposta a un bisogno preciso. Esplora l'ecosistema Neo Galaxy."
   },
@@ -18,12 +18,13 @@
     "map": "MAPPA"
   },
   "start": {
-    "title": "Un viaggio tra i mondi\ndel tuo ecosistema.",
-    "subtitle": "Ogni progetto è un pianeta. Ogni pianeta, una risposta a un bisogno preciso. Scorri per iniziare l'esplorazione e scoprire dove vuoi atterrare.",
+    "title": "Un viaggio tra i mondi del nostro ecosistema.",
+    "subtitle": "Una rotta tracciata per accogliere un tuo bisogno specifico o accendere un tuo interesse. Scorri per iniziare l'esplorazione e scegli dove atterrare.",
     "scrollCue": "Inizia il viaggio"
   },
   "intro": {
-    "title": "Neo Galaxy non è un singolo progetto: è una <em>costellazione</em>. Ogni componente dell'ecosistema nasce per rispondere a un bisogno reale, e insieme tracciano un'unica rotta — dall'idea alla community, dai dati alla visione d'insieme.",
+    "title": "Un solo ecosistema. Infiniti punti di contatto.",
+    "text": "Neo Galaxy non si esaurisce in un'unica forma, ma vive nella sinergia dei suoi mondi. Ogni elemento del nostro ecosistema è una risposta concreta a una necessità reale: frammenti connessi che tracciano un'unica, grande rotta. Dalla scintilla della Community all'architettura della Software House, fino alla crescita guidata dell'Academy: dai dati alla visione d'insieme. Scorri per iniziare il viaggio e tracciare la tua orbita.",
     "scrollCue": "Prosegui il viaggio"
   },
   "planets": {
@@ -31,20 +32,20 @@
     "community": {
       "title": "Neo Galaxy Community",
       "description": "Un regno fantasy chiamato Vaeloria, diviso tra popoli, alleanze e territori in conflitto. Crea il tuo personaggio ed entra a far parte di una storia collettiva che la community scrive insieme, regione dopo regione.",
-      "detailToggle": "Scopri di più",
-      "detail": "Vaeloria è divisa in quattordici regioni, ciascuna con una propria identità politica e culturale: regni in equilibrio precario, popoli in cerca di alleanze, territori contesi. Alla creazione scegli razza, background e schieramento, poi la tua storia si intreccia con eventi guidati dallo staff e con le scelte degli altri giocatori: le azioni in una regione possono cambiare gli equilibri delle altre."
+      "moreInfo": "Scopri di più",
+      "url": "https://community.neogalaxy.it"
     },
     "ngsh": {
       "title": "Neo Galaxy Software House",
       "description": "Un server Minecraft a tema fantasy costruito per esplorazione, progressione e sopravvivenza in compagnia. Dungeon da affrontare, magia da scoprire e una community sempre pronta a giocare insieme.",
-      "detailToggle": "Scopri di più",
-      "detail": "Il mondo è pensato per la progressione a lungo termine: classi e abilità da sbloccare, dungeon con meccaniche originali e boss studiati per essere affrontati in gruppo. La sopravvivenza è collaborativa più che competitiva, con eventi periodici organizzati dallo staff e territori da costruire insieme al resto della community."
+      "moreInfo": "Scopri di più",
+      "url": "https://ngsh.neogalaxy.it"
     },
     "academy": {
       "title": "Neo Galaxy Academy",
       "description": "I momenti della community raccontati attraverso video, post ed eventi sui canali social. Uno spazio aperto a chi vuole sperimentare come creator, montatore o grafico.",
-      "detailToggle": "Scopri di più",
-      "detail": "Il team copre l'intero processo: dalla ripresa e dal montaggio dei momenti migliori della community, alla grafica per i post, fino alla programmazione dei contenuti sui canali social. È il progetto più aperto a chi vuole imparare facendo, anche senza esperienza pregressa, lavorando fianco a fianco con chi già monta, disegna o scrive."
+      "moreInfo": "Scopri di più",
+      "url": "https://academy.neogalaxy.it"
     }
   },
   "map": {
