@@ -36,21 +36,21 @@ export default function App() {
         <title>{t('meta.title')}</title>
         <meta name="description" content={t('meta.description')} />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://neogalaxy.it/" />
+        <link rel="canonical" href="https://neogalaxy.net/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={t('meta.ogTitle')} />
         <meta property="og:description" content={t('meta.ogDescription')} />
-        <meta property="og:image" content="/neogalaxy-logo.png" />
-        <meta property="og:url" content="https://neogalaxy.it/" />
+        <meta property="og:image" content="assets/img/neogalaxy-logo.png" />
+        <meta property="og:url" content="https://neogalaxy.net/" />
         <meta property="og:site_name" content="Neo Galaxy" />
         <meta property="og:locale" content={locale === 'it' ? 'it_IT' : 'en_US'} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={t('meta.ogTitle')} />
         <meta name="twitter:description" content={t('meta.ogDescription')} />
-        <meta name="twitter:image" content="/neogalaxy-logo.png" />
+        <meta name="twitter:image" content="assets/img/neogalaxy-logo.png" />
         <meta name="theme-color" content="#05040f" />
         <meta name="author" content="Neo Galaxy" />
-        <meta name="keywords" content="Neo Galaxy, roleplay, Minecraft, Aetheria, community, gaming, ecosystem, Discord, Vaeloria, Event Room" />
+        <meta name="keywords" content="Neo Galaxy, roleplay, Minecraft, Aetheria, community, gaming, ecosystem, Discord, Event Room" />
       </Helmet>
 
       <Starfield />
