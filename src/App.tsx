@@ -50,7 +50,7 @@ export default function App() {
         <meta name="twitter:image" content="assets/img/neogalaxy-logo.png" />
         <meta name="theme-color" content="#05040f" />
         <meta name="author" content="Neo Galaxy" />
-        <meta name="keywords" content="Neo Galaxy, roleplay, Minecraft, Aetheria, community, gaming, ecosystem, Discord, Event Room" />
+        <meta name="keywords" content="Neo Galaxy, neo galaxy, digital, ecosystem, digital, community, academy, software house" />
       </Helmet>
 
       <Starfield />
