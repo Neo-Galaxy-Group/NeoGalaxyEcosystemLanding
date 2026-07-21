@@ -95,6 +95,8 @@ export default function PlanetSection({
         </a>
         <a
           href={`${t(`planets.${id}.url`)}`}
+          target="_blank"
+          rel="noopener noreferrer"
           className="detail-toggle inline-flex items-center gap-2 bg-transparent cursor-pointer font-[var(--font-mono)] text-[12px] tracking-[0.08em] uppercase rounded-full text-[var(--pc)] no-underline"
           style={{
             border: "1px solid color-mix(in srgb, var(--pc) 45%, transparent)",
